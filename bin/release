@@ -5,9 +5,9 @@ name=$(cat $1/.godir)
 cat <<EOF
 ---
 config_vars:
-  PATH: ~/app/bin:~/.go/bin:~/.goroot/bin:/usr/local/bin:/usr/bin:/bin
-  GOROOT: ~/.goroot
-  GOPATH: ~/.go
+  PATH: app/bin:.go/bin:.goroot/bin:/usr/local/bin:/usr/bin:/bin
+  GOROOT: .goroot
+  GOPATH: .go
 default_process_types:
   web: revel run $name prod \$PORT
 EOF
