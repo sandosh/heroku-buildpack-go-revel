@@ -81,6 +81,6 @@ echo "-----> Running: go get -tags heroku ./..."
 cd $p
 go get -tags heroku ./...
 
-echo "-----> Running: go get github.com/robfig/revel/revel"
+echo "-----> Installing revel"
 mkdir -p $build/bin
 go get github.com/robfig/revel/revel
