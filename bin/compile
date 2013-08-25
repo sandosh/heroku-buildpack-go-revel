@@ -83,3 +83,7 @@ go get -tags heroku ./...
 
 mkdir -p $build/bin
 go get github.com/robfig/revel/revel
+
+echo "-----> Setting GOPATH"
+mkdir -p $build/.profile.d
+echo 'GOPATH=/app/.go' > $build/.profile.d/go.sh
