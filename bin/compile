@@ -86,4 +86,4 @@ go get github.com/robfig/revel/revel
 
 echo "-----> Setting GOPATH"
 mkdir -p $build/.profile.d
-echo 'GOPATH=/app/.go' > $build/.profile.d/go.sh
+echo 'export GOPATH=/app/.go' > $build/.profile.d/go.sh
